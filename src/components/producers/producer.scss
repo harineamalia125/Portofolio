@@ -1,0 +1,79 @@
+@import "../../global.scss";
+
+.producer{
+    background-color: #F0E68C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+      font-size: 50px;  
+      color: $mainColor;
+    }
+
+    .container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card{
+            width: 250px;
+            height: 70%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgb(150, 144, 144);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: all 1s ease;
+
+            &.featured{
+                width: 300px;
+                height: 75%;
+                margin: 0 30px;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: 0 30px;
+                }
+            }
+
+        }
+        .center{
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(240, 209, 108);
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h3{
+                margin-bottom: 5px;
+            }
+
+            h4{
+                color: rgb(184, 169, 169);
+            }
+
+        }
+    }
+}
